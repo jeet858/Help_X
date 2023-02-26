@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Help_X Tools",
-  "version": "0.0.1",
+  "name": "Help_X",
+  "version": "1.0.0",
   "description": "Here is your tool to help you out anytime.",
   "icons": {
     "16": "Images/icon.png",
@@ -18,5 +18,8 @@
     "default_popup": "ext.html"
   },
   "options_page": "option.html",
-  "permission": ["storage"]
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "permissions": ["contextMenus", "storage", "search", "tabs"]
 }
