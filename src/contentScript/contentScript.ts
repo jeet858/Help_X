@@ -16,6 +16,11 @@ async function addOverlay() {
 
   const divs = document.createElement("div");
   divs.textContent = "hello world";
+  divs.setAttribute(
+    "style",
+    "width: 200px;height: 100px;border-radius: 10px;border-color: rgb(228, 228, 216);border-width: 5px;border-style: solid;background-color: wheat;z-index: 1;  position: relative;"
+  );
+  divs.style.opacity = "1";
 
   targetElement.appendChild(divs);
 
